@@ -38,12 +38,12 @@ struct PrintContentsCommand: AsyncParsableCommand {
 
         guard path.isDirectory else { return }
 
-        guard let contents = path.contentsOfDirectory else {
+        guard let contents = path.contents else {
             return
         }
 
-        for itemURL in contents {
-            try await printContentsRecursively(at: itemURL, indent: indent + 1)
+        for content in contents {
+            try await printContentsRecursively(at: content.filePath, indent: indent + 1)
         }
     }
 }
