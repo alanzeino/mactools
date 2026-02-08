@@ -25,5 +25,14 @@ let package = Package(
                 .enableUpcomingFeature("InferIsolatedConformances")
             ]
         ),
+        .testTarget(
+            name: "mactoolsTests",
+            dependencies: ["mactools"],
+            swiftSettings: [
+                .defaultIsolation(MainActor.self),
+                .enableUpcomingFeature("NonisolatedNonsendingByDefault"),
+                .enableUpcomingFeature("InferIsolatedConformances")
+            ]
+        ),
     ]
 )

@@ -13,7 +13,7 @@ public extension URL {
         guard isFileURL else {
             return nil
         }
-        return FilePath(absoluteString)
+        return FilePath(path)
     }
 }
 
