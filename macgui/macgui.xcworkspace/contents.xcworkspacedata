@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:macgui.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../mactools/MacTools.xcodeproj">
+   </FileRef>
+   <Group
+      location = "container:"
+      name = "Dependencies">
+      <FileRef
+         location = "group:Tuist/.build/tuist-derived/swift-argument-parser/swift-argument-parser.xcodeproj">
+      </FileRef>
+   </Group>
+</Workspace>

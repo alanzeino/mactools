@@ -79,7 +79,7 @@ public enum DirectoryContent {
         }
     }
     
-    var filePath: FilePath {
+    public var filePath: FilePath {
         switch self {
         case .regularFile(let filePath): filePath
         case .symbolicLink(let filePath): filePath
